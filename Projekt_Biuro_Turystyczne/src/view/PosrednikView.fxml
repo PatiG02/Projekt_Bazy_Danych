@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PosrednikController" spacing="10" alignment="CENTER">
+    <TableView fx:id="posrednikTable">
+        <columns>
+            <TableColumn fx:id="idPosrednikaColumn" text="ID Pośrednika" />
+            <TableColumn fx:id="nazwaColumn" text="Nazwa" />
+            <TableColumn fx:id="emailColumn" text="Email" />
+            <TableColumn fx:id="nrTelefonuColumn" text="Nr Telefonu" />
+            <TableColumn fx:id="nipColumn" text="NIP" />
+            <TableColumn fx:id="idAdresColumn" text="ID Adres" />
+        </columns>
+    </TableView>
+</VBox>

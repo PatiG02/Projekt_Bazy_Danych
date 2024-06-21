@@ -11,6 +11,7 @@ import javafx.scene.layout.BackgroundSize;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import report.KoloniaUmowaReportFile;
+import report.PosrednikUmowaReportFile;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
@@ -67,6 +68,21 @@ public class MainController implements Initializable {
             e.printStackTrace();
         }
     }
+    
+    @FXML
+    private void handleShowPosrednikUmowaReport() {
+        openWindow("/view/PosrednikUmowaReportView.fxml", "Posrednik Umowa Report");
+    }
+    
+    @FXML
+    private void handleGeneratePosrednikUmowaReport() {
+        try {
+            PosrednikUmowaReportFile.savePosrednikUmowaReport();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    
     
     private void openWindow(String fxmlPath, String title) {
         try {

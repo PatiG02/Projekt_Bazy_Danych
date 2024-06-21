@@ -11,6 +11,10 @@
         <Button text="Open Umowa" onAction="#handleOpenUmowa"/>
         
         <Button text="Show Umowy dla Kolonii" onAction="#handleShowKoloniaUmowaReport"/>  
-        <Button text="Generate KoloniaUmowa Report to File" onAction="#handleGenerateKoloniaUmowaReport"/>     
+        <Button text="Generate KoloniaUmowa Report to File" onAction="#handleGenerateKoloniaUmowaReport"/>    
+        
+        <Button text="Show Umowy dla Pośredników" onAction="#handleShowPosrednikUmowaReport"/>  
+        <Button text="Generate PosrednikUmowa Report" onAction="#handleGeneratePosrednikUmowaReport"/>
+         
     </children>
 </VBox>
