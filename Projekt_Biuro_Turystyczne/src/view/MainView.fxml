@@ -8,5 +8,6 @@
     <children>
         <Button text="Open Kolonia" onAction="#handleOpenKolonia"/>
         <Button text="Open Adres" onAction="#handleOpenAdres"/>
+        <Button text="Open Umowa" onAction="#handleOpenUmowa"/>
     </children>
 </VBox>

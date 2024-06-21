@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UmowaController" spacing="10" alignment="CENTER">
+    <TableView fx:id="umowaTable">
+        <columns>
+            <TableColumn fx:id="idUmowyColumn" text="ID Umowy" />
+            <TableColumn fx:id="nazwaColumn" text="Nazwa" />
+            <TableColumn fx:id="idPosrednikaColumn" text="ID Pośrednika" />
+            <TableColumn fx:id="idKoloniiColumn" text="ID Kolonii" />
+            <TableColumn fx:id="idOsobaColumn" text="ID Osoba" />
+            <TableColumn fx:id="idTransportuColumn" text="ID Transportu" />
+            <TableColumn fx:id="idWyzywieniaColumn" text="ID Wyżywienia" />
+        </columns>
+    </TableView>
+</VBox>

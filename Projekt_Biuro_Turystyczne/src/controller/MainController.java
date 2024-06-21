@@ -47,6 +47,11 @@ public class MainController implements Initializable {
     private void handleOpenAdres() {
         openWindow("/view/AdresView.fxml", "Adres");
     }
+    
+    @FXML
+    private void handleOpenUmowa() { 
+        openWindow("/view/UmowaView.fxml", "Umowa");
+    }
 
     private void openWindow(String fxmlPath, String title) {
         try {
