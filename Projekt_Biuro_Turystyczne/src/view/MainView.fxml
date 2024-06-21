@@ -10,7 +10,7 @@
         <Button text="Open Adres" onAction="#handleOpenAdres"/>
         <Button text="Open Umowa" onAction="#handleOpenUmowa"/>
         
-        <Button text="Generate Report" onAction="#handleGenerateKoloniaUmowaReport"/> 
-        
+        <Button text="Show Umowy dla Kolonii" onAction="#handleShowKoloniaUmowaReport"/>  
+        <Button text="Generate KoloniaUmowa Report to File" onAction="#handleGenerateKoloniaUmowaReport"/>     
     </children>
 </VBox>

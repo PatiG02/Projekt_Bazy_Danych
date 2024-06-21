@@ -10,6 +10,7 @@ import javafx.scene.layout.BackgroundRepeat;
 import javafx.scene.layout.BackgroundSize;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import report.KoloniaUmowaReportFile;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
@@ -54,8 +55,17 @@ public class MainController implements Initializable {
     }
 
     @FXML
-    private void handleGenerateKoloniaUmowaReport() { // Updated method name
+    private void handleShowKoloniaUmowaReport() { 
         openWindow("/view/KoloniaUmowaReportView.fxml", "Kolonia Umowa Report");
+    }
+    
+    @FXML
+    private void handleGenerateKoloniaUmowaReport() {
+        try {
+            KoloniaUmowaReportFile.saveKoloniaUmowaReport();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     
     private void openWindow(String fxmlPath, String title) {
