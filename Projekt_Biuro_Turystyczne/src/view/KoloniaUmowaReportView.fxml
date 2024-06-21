@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.KoloniaUmowaReportController" spacing="10" alignment="CENTER">
+    <TableView fx:id="reportTable">
+        <columns>
+            <TableColumn fx:id="idUmowyColumn" text="ID Umowy" />
+            <TableColumn fx:id="umowaNazwaColumn" text="Umowa Nazwa" />
+            <TableColumn fx:id="idKoloniiColumn" text="ID Kolonii" />
+            <TableColumn fx:id="iloscMiejscColumn" text="Ilość Miejsc" />
+            <TableColumn fx:id="dataRozpoczeciaColumn" text="Data Rozpoczęcia" />
+            <TableColumn fx:id="dataZakonczeniaColumn" text="Data Zakończenia" />
+            <TableColumn fx:id="cenaColumn" text="Cena" />
+        </columns>
+    </TableView>
+</VBox>

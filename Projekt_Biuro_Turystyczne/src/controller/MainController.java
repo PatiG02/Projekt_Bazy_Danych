@@ -53,6 +53,11 @@ public class MainController implements Initializable {
         openWindow("/view/UmowaView.fxml", "Umowa");
     }
 
+    @FXML
+    private void handleGenerateKoloniaUmowaReport() { // Updated method name
+        openWindow("/view/KoloniaUmowaReportView.fxml", "Kolonia Umowa Report");
+    }
+    
     private void openWindow(String fxmlPath, String title) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlPath));

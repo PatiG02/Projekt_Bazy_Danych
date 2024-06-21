@@ -9,5 +9,8 @@
         <Button text="Open Kolonia" onAction="#handleOpenKolonia"/>
         <Button text="Open Adres" onAction="#handleOpenAdres"/>
         <Button text="Open Umowa" onAction="#handleOpenUmowa"/>
+        
+        <Button text="Generate Report" onAction="#handleGenerateKoloniaUmowaReport"/> 
+        
     </children>
 </VBox>
