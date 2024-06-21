@@ -21,18 +21,17 @@ public class PosrednikUmowaReportFile {
         List<PosrednikUmowa> reportList = dao.getPosrednikUmowaReport();
 
         // Write the column names
-        b.write("ID Umowy, Umowa Nazwa, ID Pośrednika, Pośrednik Nazwa, Email, Nr Telefonu, NIP");
+        b.write("ID Pośrednika, Pośrednik Nazwa, Email, Nr Telefonu, NIP, Umowa Count");
         b.newLine();
 
         // Write each row of the report
         for (PosrednikUmowa entry : reportList) {
-            b.write(entry.getIdUmowy() + ", " +
-                    entry.getUmowaNazwa() + ", " +
-                    entry.getIdPosrednika() + ", " +
+            b.write(entry.getIdPosrednika() + ", " +
                     entry.getPosrednikNazwa() + ", " +
                     entry.getEmail() + ", " +
                     entry.getNrTelefonu() + ", " +
-                    entry.getNip());
+                    entry.getNip() + ", " +
+                    entry.getUmowaCount());
             b.newLine();
         }
 

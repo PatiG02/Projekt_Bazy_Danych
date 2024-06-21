@@ -13,10 +13,6 @@ public class PosrednikUmowaReportController {
     @FXML
     private TableView<PosrednikUmowa> reportTable;
     @FXML
-    private TableColumn<PosrednikUmowa, Integer> idUmowyColumn;
-    @FXML
-    private TableColumn<PosrednikUmowa, String> umowaNazwaColumn;
-    @FXML
     private TableColumn<PosrednikUmowa, Integer> idPosrednikaColumn;
     @FXML
     private TableColumn<PosrednikUmowa, String> posrednikNazwaColumn;
@@ -26,18 +22,19 @@ public class PosrednikUmowaReportController {
     private TableColumn<PosrednikUmowa, String> nrTelefonuColumn;
     @FXML
     private TableColumn<PosrednikUmowa, Integer> nipColumn;
+    @FXML
+    private TableColumn<PosrednikUmowa, Integer> umowaCountColumn; // New column for umowa count
 
     private PosrednikUmowaDAO reportDAO = new PosrednikUmowaDAO();
 
     @FXML
     private void initialize() {
-        idUmowyColumn.setCellValueFactory(new PropertyValueFactory<>("idUmowy"));
-        umowaNazwaColumn.setCellValueFactory(new PropertyValueFactory<>("umowaNazwa"));
         idPosrednikaColumn.setCellValueFactory(new PropertyValueFactory<>("idPosrednika"));
         posrednikNazwaColumn.setCellValueFactory(new PropertyValueFactory<>("posrednikNazwa"));
         emailColumn.setCellValueFactory(new PropertyValueFactory<>("email"));
         nrTelefonuColumn.setCellValueFactory(new PropertyValueFactory<>("nrTelefonu"));
         nipColumn.setCellValueFactory(new PropertyValueFactory<>("nip"));
+        umowaCountColumn.setCellValueFactory(new PropertyValueFactory<>("umowaCount"));
 
         ObservableList<PosrednikUmowa> reportList = FXCollections.observableArrayList(reportDAO.getPosrednikUmowaReport());
         reportTable.setItems(reportList);

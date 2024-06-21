@@ -1,31 +1,14 @@
 package model;
 
 public class PosrednikUmowa {
-    private int idUmowy;
-    private String umowaNazwa;
     private int idPosrednika;
     private String posrednikNazwa;
     private String email;
     private String nrTelefonu;
     private int nip;
+    private int umowaCount; // New field for the count of umowa
 
     // Getters and Setters
-    public int getIdUmowy() {
-        return idUmowy;
-    }
-
-    public void setIdUmowy(int idUmowy) {
-        this.idUmowy = idUmowy;
-    }
-
-    public String getUmowaNazwa() {
-        return umowaNazwa;
-    }
-
-    public void setUmowaNazwa(String umowaNazwa) {
-        this.umowaNazwa = umowaNazwa;
-    }
-
     public int getIdPosrednika() {
         return idPosrednika;
     }
@@ -64,5 +47,13 @@ public class PosrednikUmowa {
 
     public void setNip(int nip) {
         this.nip = nip;
+    }
+
+    public int getUmowaCount() {
+        return umowaCount;
+    }
+
+    public void setUmowaCount(int umowaCount) {
+        this.umowaCount = umowaCount;
     }
 }
