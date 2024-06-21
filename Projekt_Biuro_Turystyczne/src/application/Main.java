@@ -17,7 +17,7 @@ public class Main extends Application {
         primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("/resources/pelican_logo.png")));
 
         // Set the scene and window size
-        Scene scene = new Scene(root, 400, 400);
+        Scene scene = new Scene(root, 800, 800);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
