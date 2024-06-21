@@ -14,7 +14,7 @@ public class KoloniaUmowaDAO {
         List<KoloniaUmowa> reportEntries = new ArrayList<>();
         String query = "SELECT u.id_umowy, u.nazwa AS umowa_nazwa, k.id_kolonii, k.ilość_miejsc, k.data_rozpoczęcia, k.data_zakończenia, k.cena " +
                        "FROM umowa u " +
-                       "JOIN kolonia k ON u.id_kolonii = k.id_kolonii";
+                       "JOIN kolonia k ON u.id_kolonii = k.id_kolonii order by k.id_kolonii";
 
         try (Connection connection = DBConnector.getConnection();
              PreparedStatement statement = connection.prepareStatement(query);
