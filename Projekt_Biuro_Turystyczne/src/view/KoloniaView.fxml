@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.collections.ObservableList?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.KoloniaController">
+    <TableView fx:id="koloniaTable">
+        <columns>
+            <TableColumn fx:id="idKoloniiColumn" text="ID Kolonii" />
+            <TableColumn fx:id="iloscMiejscColumn" text="Ilość Miejsc" />
+            <TableColumn fx:id="dataRozpoczeciaColumn" text="Data Rozpoczęcia" />
+            <TableColumn fx:id="dataZakonczeniaColumn" text="Data Zakończenia" />
+            <TableColumn fx:id="cenaColumn" text="Cena" />
+            <TableColumn fx:id="idMiejscowosciColumn" text="ID Miejscowości" />
+            <TableColumn fx:id="idZakwaterowaniaColumn" text="ID Zakwaterowania" />
+            <TableColumn fx:id="idAdresColumn" text="ID Adres" />
+        </columns>
+    </TableView>
+</VBox>
